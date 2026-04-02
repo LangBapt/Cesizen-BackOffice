@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import logoImg from '../assets/cesizen-logo.png';
 
 const LoginPage = () => {
   const { login } = useAuth();
@@ -22,7 +23,11 @@ const LoginPage = () => {
   return (
     <div className="login-wrapper">
       <div className="login-box">
-        <h2>CESIZen</h2>
+        <img 
+        src={logoImg} 
+        alt="Logo CESIZen" 
+        style={styles.logo} 
+      />
         <p style={{ textAlign: "center", color: "#718096", marginBottom: "1.5rem" }}>Interface Administrateur</p>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -41,6 +46,13 @@ const LoginPage = () => {
       </div>
     </div>
   );
+};
+
+const styles = {
+  logo: {
+    width: '300px',         
+    height: 'auto',            
+  }
 };
 
 export default LoginPage;

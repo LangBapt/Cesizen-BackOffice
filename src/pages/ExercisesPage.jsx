@@ -65,7 +65,7 @@ const ExercisesPage = () => {
   return (
     <div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
-        <h2 style={{ color: "#2c7a7b" }}>🫁 Gestion des Exercices de Respiration</h2>
+        <h2 style={{ color: "#01bf60" }}>🫁 Gestion des Exercices de Respiration</h2>
         <button className="btn btn-primary" onClick={openCreate}>+ Créer</button>
       </div>
       {msg && <p className="success-msg">{msg}</p>}
