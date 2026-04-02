@@ -18,7 +18,7 @@ const DashboardPage = () => {
 
   return (
     <div>
-      <h2 style={{ marginBottom: "1.5rem", color: "#2c7a7b" }}>Tableau de bord</h2>
+      <h2 style={{ marginBottom: "1.5rem", color: "#01bf60" }}>Tableau de bord</h2>
       <div className="stats-grid">
         <div className="stat-card">
           <div className="number">{stats.users}</div>
