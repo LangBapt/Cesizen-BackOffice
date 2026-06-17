@@ -18,6 +18,7 @@ const ExercisesPage = () => {
     setPhases(ph.data);
   };
 
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { load(); }, []);
 
   const openCreate = () => {
