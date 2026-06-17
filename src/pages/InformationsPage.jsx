@@ -15,6 +15,7 @@ const InformationsPage = () => {
     setInfos(res.data);
   };
 
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { load(); }, []);
 
   const openCreate = () => { setEditing(null); setForm(emptyForm); setShowModal(true); };

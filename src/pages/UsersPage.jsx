@@ -11,7 +11,8 @@ const UsersPage = () => {
     const res = await api.get("/users");
     setUsers(res.data);
   };
-
+  
+// eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { load(); }, []);
 
   const handleCreate = async (e) => {
