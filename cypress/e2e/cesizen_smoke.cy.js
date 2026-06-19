@@ -1,3 +1,4 @@
+/* eslint-disable */
 describe('CesiZEN - Vérification de la page d\'accueil', () => {
   
   it('Doit charger correctement le Backoffice de Staging', () => {
