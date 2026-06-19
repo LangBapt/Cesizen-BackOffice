@@ -31,7 +31,7 @@ const LoginPage = () => {
         <p style={{ textAlign: "center", color: "#718096", marginBottom: "1.5rem" }}>Interface Administrateur</p>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Email</label>
+            <label>Emmail</label>
             <input type="email" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
           </div>
           <div className="form-group">
